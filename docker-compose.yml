@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  next-ss:
+    container_name: next-ss
+    image: next-ss:latest
+    volumes:
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    ports:
+      - '9000:9000'
+    environment:
+      - NODE_ENV=production
+      - CHOKIDAR_USEPOLLING=true
+    tty: true

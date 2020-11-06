@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "ignore": [
+    "node_modules",
+    ".next"
+  ],
+  "watch": [
+    "src/server/",
+    "src/services/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts js json"
+}
